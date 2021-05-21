@@ -24,7 +24,7 @@ public class StudentRegistrationForm {
     String currentAddress = "West Road 12";
     String state = "NCR";
     String city = "Delhi";
-    String uploadFile = "auto_test.jpeg";
+    String uploadFile = "auto_test_pic.jpeg";
 
     @BeforeAll
     static void setUp(){
@@ -63,7 +63,7 @@ public class StudentRegistrationForm {
 
         $("[for=hobbies-checkbox-1]").click();
         $("[for=hobbies-checkbox-3]").click();
-        $("[id=uploadPicture]").uploadFile(new File("/src/test/resources/auto_test.jpeg"));
+        $("[id=uploadPicture]").uploadFile(new File("/src/test/resources/auto_test_pic.jpeg"));
         $("[id=currentAddress]").setValue(currentAddress);
 
         $("[id=userForm]").scrollTo();
