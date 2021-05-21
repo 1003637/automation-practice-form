@@ -63,7 +63,7 @@ public class StudentRegistrationForm {
 
         $("[for=hobbies-checkbox-1]").click();
         $("[for=hobbies-checkbox-3]").click();
-        $("[id=uploadPicture]").uploadFile(new File("/Users/dryzhykova/Documents/qa.guru/automation-practice-form/src/test/resources/auto_test.jpeg"));
+        $("[id=uploadPicture]").uploadFile(new File("/src/test/resources/auto_test.jpeg"));
         $("[id=currentAddress]").setValue(currentAddress);
 
         $("[id=userForm]").scrollTo();
