@@ -84,7 +84,7 @@ public class RegistrationPage {
         submit.click();
     }
 
-    public void scroll(){
+    public void scrollDown(){
         userForm.scrollTo();
     }
 

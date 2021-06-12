@@ -56,10 +56,10 @@ public class StudentRegistrationFormTest {
         registrationPage.typeUserNumber(userNumber);
         registrationPage.setDate(date, month, year);
         registrationPage.typeSubjectsInput(subject);
-        registrationPage.selectHobby("Sports");
-        registrationPage.uploadPicture("/Users/dasha/Documents/qaguru/src/test/resources/auto_test_pic.jpeg");
+        registrationPage.selectHobby(hobbies);
+        registrationPage.uploadPicture("/src/test/resources/auto_test_pic.jpeg");
         registrationPage.typeCurrentAddress(currentAddress);
-        registrationPage.scroll();
+        registrationPage.scrollDown();
         registrationPage.selectState(state);
         registrationPage.selectCity(city);
         registrationPage.submit();
