@@ -19,4 +19,13 @@ public class Table {
     public SelenideElement getRow(int indexOfRow) {
         return getTableRows().get(indexOfRow);
     }
+    
+    public ElementsCollection getCellsForRow(int rowPosition) {
+        return rows.shouldBe(sizeGreaterThanOrEqual(rowPosition + 1))
+                .get(rowPosition).$$("td");
+    }
+
+    public SelenideElement getFirstRow() {
+        return getTableRows().first();
+    }
 }
