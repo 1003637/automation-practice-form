@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static utils.RandomUtils.*;
 
-public class StudentRegistrationFormTest {
+public class StudentRegistrationFormTest extends TestBase {
     Logger logger = LoggerFactory.getLogger(StudentRegistrationFormTest.class);
     Faker faker = new Faker();
 
@@ -34,15 +34,9 @@ public class StudentRegistrationFormTest {
      city = "Delhi",
      uploadFile = "auto_test_pic.jpeg";
 
-    @BeforeAll
-    static void setUp(){
-        Configuration.startMaximized = true;
-        Configuration.browser = "chrome";
-        open("https://demoqa.com/automation-practice-form");
-    }
-
     @Test
     void successfulRegistrationTest(){
+        open("https://demoqa.com/automation-practice-form");
         RegistrationPage registrationPage = new RegistrationPage();
         String[] tableLables = {"Student Name", "Student Email", "Gender", "Mobile", "Date of Birth", "Subjects", "Hobbies", "Picture", "Address", "State and City"};
         String[] tableValue = {firstName + " " + lastName, userEmail, gender, userNumber, dateOfBirth, subject, hobbies, uploadFile, currentAddress, state + " " + city};
