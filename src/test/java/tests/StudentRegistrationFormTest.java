@@ -51,7 +51,7 @@ public class StudentRegistrationFormTest extends TestBase {
         registrationPage.setDate(date, month, year);
         registrationPage.typeSubjectsInput(subject);
         registrationPage.selectHobby(hobbies);
-        registrationPage.uploadPicture("/src/test/resources/auto_test_pic.jpeg");
+        registrationPage.uploadPicture("src/test/resources/auto_test_pic.jpeg");
         registrationPage.typeCurrentAddress(currentAddress);
         registrationPage.scroll();
         registrationPage.selectState(state);
