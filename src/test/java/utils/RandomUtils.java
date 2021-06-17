@@ -48,7 +48,7 @@ public class RandomUtils {
         return hobbies[hobbyIndex];
     }
     public static String getRandomDay() {
-        int day = getRandomNumber(10, 28);
+        int day = getRandomNumber(1, 30);
         return String.valueOf(day);
     }
 
