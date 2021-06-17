@@ -2,6 +2,7 @@ package tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -31,12 +32,12 @@ public class TestBase {
     public void tearDown() {
         String sessionId = getSessionId();
 
-        /*Attach.screenshotAs("Last screenshot");
+        Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
-        Attach.browserConsoleLogs();*/
+        Attach.browserConsoleLogs();
         closeWebDriver();
 
-        /*Attach.addVideo(sessionId);*/
+        Attach.addVideo(sessionId);
     }
 
     public static String getSessionId(){

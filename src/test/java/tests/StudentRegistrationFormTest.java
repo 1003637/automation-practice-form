@@ -73,11 +73,11 @@ public class StudentRegistrationFormTest extends TestBase {
                 tableLables[9] + " " + state + " " + city));
 
         logger.info("Second way of checking all rows in the table");
-        int row = 0;
+        /*int row = 0;
         for(String value: tableValue){
             table.getRow(row).shouldHave(text(value));
             row++;
-        }
+        }*/
 
 
     }
