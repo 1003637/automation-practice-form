@@ -35,4 +35,14 @@ public class TelegramNotificationFake2Test {
     void fake6Test(){
         assertTrue(false);
     }
+
+    @Test
+    void fake7Test(){
+        assertTrue(false);
+    }
+
+    @Test
+    void fake8Test(){
+        assertTrue(false);
+    }
 }
